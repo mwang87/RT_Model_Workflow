@@ -1,0 +1,73 @@
+mz,rt_peak,label,rt_min,rt_max,mz_tolerance,polarity,inchi_key,indentification notes,adduct
+167.0702706,1.068941733,4-methoxyphenylacetic acid (unlabeled),0.568941733,1.568941733,15,positive,NRPFNQUDKRYCNX-UHFFFAOYSA-N,ionizes in neg polarity.,[M+H]+
+123.0552893,1.224396021,nicotinamide (unlabeled),0.724396021,1.724396021,15,positive,DFPAKSUCGFBDDF-UHFFFAOYSA-N,ionizes in pos polarity.,[M+H]+
+127.0502039,1.255231064,thymine (unlabeled),0.755231064,1.755231064,15,positive,RWQNBRDOKXIBIV-UHFFFAOYSA-N,ionizes in both polarity. HILz: pk at rt +0.25 is in source frag of thymidine,[M+H]+
+123.0440559,1.272043637,benzoic acid (unlabeled),0.772043637,1.772043637,15,positive,WPYMKLBDIGXBTP-UHFFFAOYSA-N,ionizes in neg polarity.,[M+H]+
+165.0407018,1.272194658,"2,4-dihydroxypteridine (unlabeled)",0.772194658,1.772194658,15,positive,UYEUUXMDVNYCAM-UHFFFAOYSA-N,ionizes in both polarity.,[M+H]+
+113.0345538,1.393699506,uracil (unlabeled),0.893699506,1.893699506,15,positive,ISAKRJDGNUQOIC-UHFFFAOYSA-N,ionizes in polarity. HILz: pks at rt +0.4 and +1 min are in src frags of deoxyuridine and uridine,[M+H]+
+243.097548,1.603927488,thymidine (unlabeled),1.103927488,2.103927488,15,positive,IQFYYKKMVGJFEH-XLPZGREQSA-N,ionizes in both polarity.,[M+H]+
+153.0546206,1.616534167,2-hydroxyphenylacetic acid (unlabeled),1.116534167,2.116534167,15,positive,IWYDHOAUDWTVEP-SSDOTTSWSA-N,ionizes in neg polarity.,[M+H]+
+229.0818979,1.876662419,deoxyuridine (unlabeled),1.376662419,2.376662419,15,positive,MXHRCPNRJAMMIM-SHYZEUOFSA-N,ionizes in both polarity.,[M+H]+
+146.1175552,1.9552864,acetylcholine (unlabeled),1.4552864,2.4552864,15,positive,OIPILFWXSMYKGL-UHFFFAOYSA-N,ionizes in pos polarity.,[M]+
+170.0811697,2.158057096,pyridoxine (unlabeled),1.658057096,2.658057096,15,positive,LXNHXLLTXMVWPM-UHFFFAOYSA-N,ionizes in both polarity.,[M+H]+
+139.0389705,2.196354854,salicylic acid (unlabeled),1.696354854,2.696354854,15,positive,YGSDEFSMJLZEOE-UHFFFAOYSA-N,ionizes in neg polarity.,[M+H]+
+252.1091158,2.234006981,2'-deoxyadenosine (unlabeled),1.734006981,2.734006981,15,positive,OLXZPDWKRNYJJZ-RRKCRQDMSA-N,ionizes in both polarity.,[M+H]+
+136.0617716,2.557601998,adenine (unlabeled),2.057601998,3.057601998,15,positive,GFFGJBXGBJISGV-UHFFFAOYSA-N,ionizes in both polarity. HILz: pks at rt -0.4 and +0.23 = in src frags of deoxyadenosine and adenosine,[M+H]+
+153.0407018,2.725344,xanthine (unlabeled),2.225344,3.225344,15,positive,LRFVTYWOQMYALW-UHFFFAOYSA-N,ionizes in both polarity. HILz: pk at RT +7.5 min is in src frag of xanthosine,[M+H]+
+151.0600999,2.750702982,ribose (unlabeled),2.250702982,3.250702982,15,positive,HMFHBZSHGGEWLO-SOOFDHNKSA-N,ionizes in neg polarity. HILz: pk at RT +8 min = second isotope of methionine,[M+H]+
+165.0757499,2.796993087,rhamnose (unlabeled),2.296993087,3.296993087,15,positive,SHZGCJCMOBCMKK-JFNONXLTSA-N,ionizes in neg polarity.,[M+H]+
+245.0768126,2.888931519,uridine (unlabeled),2.388931519,3.388931519,15,positive,DRTQHJPVMGBUCF-XVFCMESISA-N,ionizes in both polarity.,[M+H]+
+268.1040304,3.091018609,adenosine (unlabeled),2.591018609,3.591018609,15,positive,OIRDTQYFTABQOQ-KQYNXXCUSA-N,ionizes in both polarity.,[M+H]+
+137.0457872,3.102967341,hypoxanthine (unlabeled),2.602967341,3.602967341,15,positive,FDGQSTZJBFJUBT-UHFFFAOYSA-N,ionizes in both polarity. HILz: pk in pos mode at rt +1.8 min = in src frag of inosine,[M+H]+
+126.0661883,4.418371688,5-methylcytosine (unlabeled),3.918371688,4.918371688,15,positive,LRSASMSXMSNRBT-UHFFFAOYSA-N,ionizes in both polarity.,[M+H]+
+117.0546206,4.448129315,2-oxovaleric acid (unlabeled),3.948129315,4.948129315,15,positive,KDVFRMMRZOCFLS-UHFFFAOYSA-N,ionizes in neg polarity.,[M+H]+
+112.0505382,4.833663875,cytosine (unlabeled),4.333663875,5.333663875,15,positive,OPTASPLRGRRNAP-UHFFFAOYSA-N,ionizes in both polarity. HILz: pks at rt +0.55 and 1.55 are in src frags of deoxycytidine and cytidine,[M+H]+
+91.0389705,5.064398962,lactic acid (unlabeled),4.564398962,5.564398962,15,positive,JVTAAEKCZFNVCJ-REOHCLBHSA-N,ionizes in neg polarity.,[M+H]+
+269.088046,5.434235961,inosine (unlabeled),4.934235961,5.934235961,15,positive,UGQMRVRMYYASKQ-KQYNXXCUSA-N,ionizes in both polarity.,[M+H]+
+228.0978824,5.594117397,deoxycytidine (unlabeled),5.094117397,6.094117397,15,positive,CKTSBUTUHBMZGZ-SHYZEUOFSA-N,ionizes in both polarity.,[M+H]+
+124.0393049,5.631626786,nicotinic acid (unlabeled),5.131626786,6.131626786,15,positive,PVNIIMVLHYAWGP-UHFFFAOYSA-N,ionizes in both polarity.,[M+H]+
+137.0597059,5.878913512,phenylacetic acid (unlabeled),5.378913512,6.378913512,15,positive,WLJVXDMOQOGPHL-UHFFFAOYSA-N,ionizes in polarity. HILz: pk at RT +1.5 min = second isotope of adenine,[M+H]+
+268.1040304,6.87418691,2'deoxyguanosine (unlabeled),6.37418691,7.37418691,15,positive,YKBGVTZYEHREMT-KVQBGUIXSA-N,ionizes in both polarity.,[M+H]+
+244.092797,6.933566273,cytidine (unlabeled),6.433566273,7.433566273,15,positive,UHDGCWIWMRVCDJ-XVFCMESISA-N,ionizes in both polarity.,[M+H]+
+244.0791579,7.153497474,N-acetyl-mannosamine (unlabeled),6.653497474,7.653497474,15,positive,OVRNDRQMDRJTHS-ZTVVOAFPSA-N,ionizes in both polarity.,[M+Na]+
+118.086255,7.905109179,betaine (unlabeled),7.405109179,8.405109179,15,positive,KWIUHFFTVRNATP-UHFFFAOYSA-O,ionizes in pos polarity.,[M]+
+284.098945,8.570944541,guanosine (unlabeled),8.070944541,9.070944541,15,positive,NYHBQMYGNKIUIF-UUOKFMHZSA-N,ionizes in both polarity.,[M+H]+
+166.086255,8.979305704,phenylalanine (unlabeled),8.479305704,9.479305704,15,positive,COLNVLDHVKWLRT-QMMMGPOBSA-N,ionizes in both polarity. HILz: pos mode is very noisy,[M+H]+
+132.1019051,9.319656306,leucine (unlabeled),8.819656306,9.819656306,15,positive,ROHFNLRQFUQHCH-UHFFFAOYSA-N,ionizes in both polarity.,[M+H]+
+139.0502039,9.351932178,urocanic acid (unlabeled),8.851932178,9.851932178,15,positive,LOIYMIARKYCTBW-OWOJBTEDSA-N,"ionizes in both polarity. hilZ: smaller pk at ~2 min,",[M+H]+
+183.0863146,9.534507075,mannitol (unlabeled),9.034507075,10.03450708,15,positive,FBPFZTCFMRRESA-KVTDHHQDSA-N,ionizes in neg polarity.,[M+H]+
+132.1019051,9.70543744,isoleucine (unlabeled),9.20543744,10.20543744,15,positive,AGPKZVBTJJNPAG-WHFBIAKZSA-N,ionizes in both polarity.,[M+H]+
+285.0829606,9.782678891,xanthosine (unlabeled),9.282678891,10.28267889,15,positive,UBORTCNDUKBEOP-UUOKFMHZSA-N,ionizes in both polarity.,[M+H]+
+205.0971541,10.15664925,tryptophan (unlabeled),9.65664925,10.65664925,15,positive,QIVBCDIJIAJPQS-SECBINFHSA-N,ionizes in both polarity.,[M+H]+
+150.058326,10.4409554,methionine (unlabeled),9.9409554,10.9409554,15,positive,FFEARJCKVFRZRR-BYPYZUCNSA-N,ionizes in both polarity.,[M+H]+
+282.1196804,10.78124768,1-methyladenosine (unlabeled),10.28124768,11.28124768,15,positive,GFYLSDSUCHVORB-IOSLPCCCSA-N,ionizes in both polarity.,[M+H]+
+116.070605,10.91977168,proline (unlabeled),10.41977168,11.41977168,15,positive,ONIBWKKTOPOVIA-BYPYZUCNSA-N,ionizes in both polarity.,[M+H]+
+130.086255,10.97482181,pipecolic acid (unlabeled),10.47482181,11.47482181,15,positive,HXEACLLIILLPRG-YFKPBYRVSA-N,ionizes in both polarity. HILz: pk at rt +6 min is in src frag of lysine (+),[M+H]+
+118.086255,11.11600911,valine (unlabeled),10.61600911,11.61600911,15,positive,KZSNJWFQEVHDMF-BYPYZUCNSA-N,ionizes in both polarity.,[M+H]+
+130.0498695,11.65330736,5-oxo-proline (unlabeled),11.15330736,12.15330736,15,positive,ODHCTXKNWHHXJC-VKHMYHEASA-N,"ionizes in polarity. HILz: pks at rt +1.9, +2.99, +3.79, +4.69 = in src frags of hydroxyproline (-), Gln (-), N-acetyl-Glu, Glu",[M+H]+
+126.0219405,12.15812344,taurine (unlabeled),11.65812344,12.65812344,15,positive,XOAAWQZATWQOTB-UHFFFAOYSA-N,ionizes in both polarity.,[M+H]+
+143.081504,12.50349732,ectoine (unlabeled),12.00349732,13.00349732,15,positive,WQXNXVUDBPYKBA-YFKPBYRVSA-N,ionizes in pos polarity.,[M+H]+
+161.10464,13.28582682,carnitine (unlabeled),12.78582682,13.78582682,15,positive,PHIQHXFUZVPYII-ZCFIWIBFSA-O,ionizes in pos polarity.,[M+H]+
+90.05495492,13.40509074,alanine (unlabeled),12.90509074,13.90509074,15,positive,QNAYBMKLOCPYGJ-REOHCLBHSA-N,ionizes in both polarity.,[M+H]+
+343.123488,13.44515078,sucrose (unlabeled),12.94515078,13.94515078,15,positive,CZMRCDWAGMRECN-UGDNZRGBSA-N,ionizes in both polarity. HILz: multiple peaks,[M+H]+
+120.0655196,13.48957226,threonine (unlabeled),12.98957226,13.98957226,15,positive,AYFVYJQAPQTCCC-GBXIJSLDSA-N,ionizes in both polarity.,[M+H]+
+132.0655196,13.67383331,cis-4-hydroxy-proline (unlabeled),13.17383331,14.17383331,15,positive,PMMYEEVYMWASQN-QWWZWVQMSA-N,ionizes in both polarity.,[M+H]+
+146.0924031,13.86132281,4-guanidinobutanoic acid (unlabeled),13.36132281,14.36132281,15,positive,TUHVEAJXIMEOSA-UHFFFAOYSA-N,ionizes in both polarity.,[M+H]+
+365.1054322,14.0677773,maltose (unlabeled),13.5677773,14.5677773,15,positive,GUBGYTABKSRVRQ-PICCSMPSSA-N,ionizes in both polarity.,[M+Na]+
+106.0498695,14.31261357,serine (unlabeled),13.81261357,14.81261357,15,positive,MTCFGRXMJLQNBG-REOHCLBHSA-N,ionizes in both polarity.,[M+H]+
+147.0764186,14.31275825,glutamine (unlabeled),13.81275825,14.81275825,15,positive,ZDXPYRJPNDTMRX-VKHMYHEASA-N,ionizes in both polarity.,[M+H]+
+133.0607686,14.36808894,asparagine (unlabeled),13.86808894,14.86808894,15,positive,DCXYFEDJOCDNAF-REOHCLBHSA-N,ionizes in pos polarity. HILz: pks in neg mode at RT - 2.15 and -0.15 are in src frags of citrulline and arginine,[M+H]+
+104.070605,14.38565257,gamma-Aminobutyric acid (unlabeled),13.88565257,14.88565257,15,positive,BTCSSZJGUNDROE-UHFFFAOYSA-N,ionizes in both polarity. HILz: pk at rt -0.5 min is in src frag of 4-guanidinobutanoic acid,[M+H]+
+147.0287997,14.50646265,alpha-ketoglutaric acid (unlabeled),14.00646265,15.00646265,15,positive,KPGXRSRHYNQIFN-UHFFFAOYSA-N,ionizes in neg polarity.,[M+H]+
+180.086649,14.52081396,mannosamine (unlabeled),14.02081396,15.02081396,15,positive,MSWZFWKMSRAUBD-CBPJZXOFSA-N,ionizes in pos polarity.,[M+H]+
+170.0117698,14.53906337,cysteic acid (unlabeled),14.03906337,15.03906337,15,positive,XVOYSCVBGLVSOL-REOHCLBHSA-N,ionizes in both polarity.,[M+H]+
+176.0553488,14.82464623,N-acetyl-aspartic acid (unlabeled),14.32464623,15.32464623,15,positive,OTCCIMWXFLJLIA-BYPYZUCNSA-N,ionizes in both polarity.,[M+H]+
+176.1029677,15.08943009,citrulline (unlabeled),14.58943009,15.58943009,15,positive,RHGKLRLOHDJJDR-BYPYZUCNSA-N,ionizes in pos polarity.,[M+H]+
+189.1233688,15.12986101,N-alpha-acetyl-lysine (unlabeled),14.62986101,15.62986101,15,positive,VEYYWZRYIYDQJM-ZETCQYMHSA-N,ionizes in both polarity.,[M+H]+
+190.0709989,15.15757256,N-acetyl-glutamic acid (unlabeled),14.65757256,15.65757256,15,positive,RFMMMVDNIPUKGG-YFKPBYRVSA-N,ionizes in both polarity.,[M+H]+
+505.1763114,15.53249857,raffinose (unlabeled),15.03249857,16.03249857,15,positive,MUPFEKGTMRGPLJ-ZQSKZDJDSA-N,ionizes in both polarity.,[M+H]+
+148.0604342,15.93538957,glutamic acid (unlabeled),15.43538957,16.43538957,15,positive,WHUUTDBJXJRKMK-VKHMYHEASA-N,ionizes in both polarity.,[M+H]+
+134.0447842,16.13036002,Aspartic acid (unlabeled),15.63036002,16.63036002,15,positive,CKLJMWTZIZZHCS-REOHCLBHSA-N,ionizes in neg polarity.,[M+H]+
+175.1189522,16.93991539,arginine (unlabeled),16.43991539,17.43991539,15,positive,ODKSFYDXXFIFQN-BYPYZUCNSA-N,ionizes in both polarity.,[M+H]+
+147.1128041,17.01131041,lysine (unlabeled),16.51131041,17.51131041,15,positive,KDXKERNSBIXSRK-YFKPBYRVSA-N,ionizes in both polarity. HILz: neg pk at rt -1.9 min = in src frac of N-acetyl-Lys,[M+H]+
+133.0971541,17.03725065,ornithine (unlabeled),16.53725065,17.53725065,15,positive,AHLPHDHHMVZTML-BYPYZUCNSA-N,ionizes in both polarity.,[M+H]+
