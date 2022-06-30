@@ -2,6 +2,7 @@
 
 params.inputsearchresults = ''
 params.workflowParameters = ''
+params.standardfile = "MSMLS_HILICz150mm_Annotation20190824_Template_QCv3_Unlabeled_Positive.csv"
 
 params.type = ''
 
@@ -21,7 +22,7 @@ process calculateResults {
 
     """
     python $TOOL_FOLDER/template_script.py \
-        $TOOL_FOLDER/MSMLS_HILICz150mm_Annotation20190824_Template_QCv3_Unlabeled_Positive.csv \
+        $TOOL_FOLDER/$params.standardfile \
         "$input_result" \
         "result_file.tsv"
     """
