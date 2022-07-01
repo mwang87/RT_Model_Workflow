@@ -19,11 +19,13 @@ process calculateResults {
 
     output:
     file "result_file.tsv"
+    file "filtered_results.tsv"
 
     """
     python $TOOL_FOLDER/template_script.py \
         $TOOL_FOLDER/$params.standardfile \
         "$input_result" \
-        "result_file.tsv"
+        "result_file.tsv" \
+        --output_filtered_results_filename filtered_results.tsv
     """
 }

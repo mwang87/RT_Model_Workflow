@@ -10,6 +10,7 @@ def main():
     parser.add_argument('input_db_filename', help='Input database filename')
     parser.add_argument('library_results_filename', help='Library results filename')
     parser.add_argument('output_results_filename', help='Output results filename')
+    parser.add_argument('--output_filtered_results_filename', help='Output filtered results filename', default=None)
     args = parser.parse_args()
 
     input_db_df = pd.read_csv(args.input_db_filename, sep=',')
@@ -52,11 +53,14 @@ def main():
     original_results_df["modeled_rt_peak"] = reg.predict(original_results_df["RT_Query"].to_numpy().reshape(-1, 1))
     original_results_df["delta_rt_to_model"] = original_results_df["modeled_rt_peak"] - original_results_df["rt_peak"]
 
-    # Now we can start filtering out hits
-
-
-
     original_results_df.to_csv(args.output_results_filename, sep="\t", index=False, na_rep="n/a")
+
+    # Now we can start filtering out hits
+    if args.output_filtered_results_filename is not None:
+        original_results_df.to_csv(args.output_filtered_results_filename, sep="\t", index=False, na_rep="n/a")
+
+
+    
 
 if __name__ == "__main__":
     main()
