@@ -22,6 +22,27 @@
         </row>
     </block>
 
+    <view id="view_results" label="View Filtered Results">
+        <blockRef id="main" type="view_filtered_results"/>
+    </view>
+
+    <block id="view_filtered_results" type="table">
+        <data>
+            <source type="file" name="workflow_results/filtered_results.tsv"/>
+            <parsers>
+                <parser type="genericTabular"/>
+            </parsers>
+        </data>
+        <row>
+            <column label="View Chromatogram" type="genericurlgenerator" width="5">
+                <parameter name="URLBASE" value="https://gnps-lcms.ucsd.edu"/>
+                <parameter name="REQUESTPARAMETER=usi" value="mzspec:GNPS:TASK-{task}-[_dyn_#filename]"/>
+                <parameter name="LABEL" value="View LCMS Chromatogram (Beta)"/>
+            </column>
+        </row>
+    </block>
+
+
     
     <!-- Summary Stats for Compute -->
     <view id="proteosafe_workflow_trace" label="ProteoSAFe Workflow Trace" group="Compute Stats">

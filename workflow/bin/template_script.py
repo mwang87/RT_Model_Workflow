@@ -59,8 +59,10 @@ def main():
 
     # Now we can start filtering out hits
     if args.output_filtered_results_filename is not None:
-        # here we can do the filtering
+        # here we can do the filtering based upon RT
         filtered_results_df = original_results_df[original_results_df["delta_rt_to_model"].abs() < args.rt_tolerance]
+
+        # 
 
         # Outputting
         filtered_results_df.to_csv(args.output_filtered_results_filename, sep="\t", index=False, na_rep="n/a")
