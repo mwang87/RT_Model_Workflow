@@ -22,7 +22,7 @@
         </row>
     </block>
 
-    <view id="view_results" label="View Filtered Results">
+    <view id="view_filtered_results" label="View Filtered Results">
         <blockRef id="main" type="view_filtered_results"/>
     </view>
 
