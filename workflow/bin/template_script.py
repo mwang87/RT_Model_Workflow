@@ -11,6 +11,8 @@ def main():
     parser.add_argument('library_results_filename', help='Library results filename')
     parser.add_argument('output_results_filename', help='Output results filename')
     parser.add_argument('--output_filtered_results_filename', help='Output filtered results filename', default=None)
+    parser.add_argument('--rt_tolerance', help='RT tolerance on the filtered output', default=0.1, type=float)
+    
     args = parser.parse_args()
 
     input_db_df = pd.read_csv(args.input_db_filename, sep=',')
@@ -57,7 +59,11 @@ def main():
 
     # Now we can start filtering out hits
     if args.output_filtered_results_filename is not None:
-        original_results_df.to_csv(args.output_filtered_results_filename, sep="\t", index=False, na_rep="n/a")
+        # here we can do the filtering
+        filtered_results_df = original_results_df[original_results_df["delta_rt_to_model"].abs() < args.rt_tolerance]
+
+        # Outputting
+        filtered_results_df.to_csv(args.output_filtered_results_filename, sep="\t", index=False, na_rep="n/a")
 
 
     
