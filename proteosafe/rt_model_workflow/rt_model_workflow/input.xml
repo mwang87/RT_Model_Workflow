@@ -26,6 +26,14 @@
             <validator type="set"/>
         </parameter>
 
+        <parameter name="rt_tolerance" label="rt_tolerance">
+            <options>
+                <option value="0.1" label="0.1 Minutes"/>
+                <option value="1.0" label="1.0 Minutes"/>
+            </options>
+            <validator type="set"/>
+        </parameter>
+
         
 
     </parameters>
@@ -53,6 +61,17 @@
             </cell>
             <cell>
                 <input type="select" parameter="standardfile"></input>
+            </cell>
+        </row>
+
+        <row>
+            <cell>
+                <label>
+                    <content parameter="rt_tolerance"/>
+                </label>
+            </cell>
+            <cell>
+                <input type="select" parameter="rt_tolerance"></input>
             </cell>
         </row>
 

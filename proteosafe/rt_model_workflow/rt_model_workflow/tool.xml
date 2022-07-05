@@ -35,7 +35,8 @@
             <arg option="-newparameters" value="workflowParameters:workflowParameters/*"/>
 
             <!-- Mapping Proteosafe param to nextflow params -->
-            <arg option="-parametermapping" value="standardfile:standardfile"/> 
+            <arg option="-parametermapping" value="standardfile:standardfile"/>
+            <arg option="-parametermapping" value="rt_tolerance:rt_tolerance"/>
         </execution>
     </tool>
 
