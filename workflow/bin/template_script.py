@@ -62,7 +62,9 @@ def main():
         # here we can do the filtering based upon RT
         filtered_results_df = original_results_df[original_results_df["delta_rt_to_model"].abs() < args.rt_tolerance]
 
-        # 
+        # Finding the top hit
+        filtered_results_df = filtered_results_df.sort_values(by=['MQScore'], ascending=False)
+        filtered_results_df = filtered_results_df.groupby(['#Scan#', "SpectrumFile"]).first()
 
         # Outputting
         filtered_results_df.to_csv(args.output_filtered_results_filename, sep="\t", index=False, na_rep="n/a")
