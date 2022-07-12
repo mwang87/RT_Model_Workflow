@@ -11,6 +11,7 @@ def main():
     parser.add_argument('library_results_filename', help='Library results filename')
     parser.add_argument('output_results_filename', help='Output results filename')
     parser.add_argument('--output_filtered_results_filename', help='Output filtered results filename', default=None)
+    parser.add_argument('--output_results_scatter', help='output_results_scatter', default=None)
     parser.add_argument('--rt_tolerance', help='RT tolerance on the filtered output', default=0.1, type=float)
     
     args = parser.parse_args()
@@ -70,6 +71,22 @@ def main():
         filtered_results_df.to_csv(args.output_filtered_results_filename, sep="\t", index=False, na_rep="n/a")
 
 
+    if args.output_results_scatter is not None:
+        with open(args.output_results_scatter, 'a') as f:
+            # Plotting the results
+            fig = px.scatter(original_results_df, x="modeled_rt_peak", y="rt_peak",
+                            hover_name="Compound_Name", hover_data=["RT_Query", "modeled_rt_peak", "delta_rt_to_model"],
+                            title="All Results, modeled RT vs DB True RT")
+            f.write(fig.to_html(full_html=False, include_plotlyjs='cdn'))
+
+            fig = px.scatter(filtered_results_df, x="modeled_rt_peak", y="rt_peak",
+                            hover_name="Compound_Name", hover_data=["RT_Query", "modeled_rt_peak", "delta_rt_to_model"],
+                            title="Filtered Results within {} min RT Error, modeled RT vs DB True RT".format(args.rt_tolerance))
+            f.write(fig.to_html(full_html=False, include_plotlyjs='cdn'))
+
+    
+
+    
     
 
 if __name__ == "__main__":

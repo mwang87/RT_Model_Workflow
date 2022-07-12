@@ -42,6 +42,18 @@
         </row>
     </block>
 
+    <view id="model_summary" label="Model Summary Visualization">
+        <blockRef id="main" type="model_summary"/>
+    </view>
+    <block id="model_summary" type="dummylinkout">
+        <data>
+            <parsers>
+                <parser type="stream" contentType="text/xml"/>
+            </parsers>
+        </data>
+        <parameter name="URLBASE" value='/ProteoSAFe/DownloadResultFile?task=[task]&amp;file=workflow_results/output_results_scatter.html&amp;block=main&amp;process_html=false'/>
+    </block>
+
 
     
     <!-- Summary Stats for Compute -->
