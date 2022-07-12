@@ -7,7 +7,7 @@ import plotly.express as px
 
 def main():
     parser = argparse.ArgumentParser(description='Script to run the workflow')
-    parser.add_argument('input_db_filename', help='Input database filename')
+    parser.add_argument('input_db_filename', help='Input database tsv filename')
     parser.add_argument('library_results_filename', help='Library results filename')
     parser.add_argument('output_results_filename', help='Output results filename')
     parser.add_argument('--output_filtered_results_filename', help='Output filtered results filename', default=None)
@@ -15,7 +15,7 @@ def main():
     
     args = parser.parse_args()
 
-    input_db_df = pd.read_csv(args.input_db_filename, sep=',')
+    input_db_df = pd.read_csv(args.input_db_filename, sep='\t')
     original_results_df = pd.read_csv(args.library_results_filename, sep='\t')
 
     print(original_results_df.columns)

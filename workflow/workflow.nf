@@ -2,7 +2,7 @@
 
 params.inputsearchresults = ''
 params.workflowParameters = ''
-params.standardfile = "MSMLS_HILICz150mm_Annotation20190824_Template_QCv3_Unlabeled_Positive.csv"
+params.standardfile = "HILIC_standards_positive.tsv"
 
 //Params
 params.rt_tolerance = '0.1' // This is a tolerance in minutes

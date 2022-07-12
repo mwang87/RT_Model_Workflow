@@ -21,7 +21,10 @@
 
         <parameter name="standardfile" label="standardfile">
             <options>
-                <option value="MSMLS_HILICz150mm_Annotation20190824_Template_QCv3_Unlabeled_Positive.csv" label="MSMLS_HILICz150mm_Annotation20190824_Template_QCv3_Unlabeled_Positive.csv"/>
+                <option value="HILIC_standards_negative.tsv" label="HILIC_standards_negative"/>
+                <option value="HILIC_standards_positive.tsv" label="HILIC_standards_positive"/>
+                <option value="C18_standards_negative.tsv" label="C18_standards_negative"/>
+                <option value="C18_standards_positive.tsv" label="C18_standards_positive"/>
             </options>
             <validator type="set"/>
         </parameter>
