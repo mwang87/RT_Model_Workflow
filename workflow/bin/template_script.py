@@ -74,14 +74,14 @@ def main():
     if args.output_results_scatter is not None:
         with open(args.output_results_scatter, 'a') as f:
             # Plotting the results
-            fig = px.scatter(original_results_df, x="modeled_rt_peak", y="rt_peak",
+            fig = px.scatter(original_results_df, x="RT_Query", y="rt_peak",
                             hover_name="Compound_Name", hover_data=["RT_Query", "modeled_rt_peak", "delta_rt_to_model"],
-                            title="All Results, modeled RT vs DB True RT")
+                            title="All Results, Observed RT vs DB True RT")
             f.write(fig.to_html(full_html=False, include_plotlyjs='cdn'))
 
-            fig = px.scatter(filtered_results_df, x="modeled_rt_peak", y="rt_peak",
+            fig = px.scatter(filtered_results_df, x="RT_Query", y="rt_peak",
                             hover_name="Compound_Name", hover_data=["RT_Query", "modeled_rt_peak", "delta_rt_to_model"],
-                            title="Filtered Results within {} min RT Error, modeled RT vs DB True RT".format(args.rt_tolerance))
+                            title="Filtered Results within {} min RT Error, Observed RT vs DB True RT".format(args.rt_tolerance))
             f.write(fig.to_html(full_html=False, include_plotlyjs='cdn'))
 
     
