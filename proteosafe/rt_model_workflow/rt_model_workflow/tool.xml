@@ -37,6 +37,9 @@
             <!-- Mapping Proteosafe param to nextflow params -->
             <arg option="-parametermapping" value="standardfile:standardfile"/>
             <arg option="-parametermapping" value="rt_tolerance:rt_tolerance"/>
+            <arg option="-parametermapping" value="OVERRIDE:override"/>
+            <arg option="-parametermapping" value="OVERRIDE_SLOPE:override_slope"/>
+            <arg option="-parametermapping" value="OVERRIDE_INTERCEPT:override_intercept"/>
         </execution>
     </tool>
 

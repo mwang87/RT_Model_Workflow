@@ -40,6 +40,22 @@
             <validator type="set"/>
         </parameter>
 
+        <parameter name="OVERRIDE" label="OVERRIDE">
+            <options>
+                <option value="No" label="No"/>
+                <option value="Yes" label="Yes"/>
+            </options>
+            <validator type="set"/>
+        </parameter>
+
+        <parameter name="OVERRIDE_SLOPE" label="OVERRIDE_SLOPE">
+            <default value="1"/>
+        </parameter>
+
+        <parameter name="OVERRIDE_INTERCEPT" label="OVERRIDE_INTERCEPT">
+            <default value="0"/>
+        </parameter>
+
         
 
     </parameters>
@@ -62,6 +78,17 @@
         <row>
             <cell>
                 <label>
+                    <content parameter="rt_tolerance"/>
+                </label>
+            </cell>
+            <cell>
+                <input type="select" parameter="rt_tolerance"></input>
+            </cell>
+        </row>
+
+        <row>
+            <cell>
+                <label>
                     <content parameter="standardfile"/>
                 </label>
             </cell>
@@ -73,11 +100,37 @@
         <row>
             <cell>
                 <label>
-                    <content parameter="rt_tolerance"/>
+                    <content parameter="OVERRIDE"/>
                 </label>
             </cell>
             <cell>
-                <input type="select" parameter="rt_tolerance"></input>
+                <input type="select" parameter="OVERRIDE"></input>
+            </cell>
+        </row>
+
+        <row>
+            <cell>
+                <label>
+                    <content parameter="OVERRIDE_SLOPE"/>
+                </label>
+            </cell>
+            <cell>
+                <input type="text" parameter="OVERRIDE_SLOPE">
+                    <attribute name="size" value="30"/>
+                </input>
+            </cell>
+        </row>
+
+        <row>
+            <cell>
+                <label>
+                    <content parameter="OVERRIDE_INTERCEPT"/>
+                </label>
+            </cell>
+            <cell>
+                <input type="text" parameter="OVERRIDE_INTERCEPT">
+                    <attribute name="size" value="30"/>
+                </input>
             </cell>
         </row>
 

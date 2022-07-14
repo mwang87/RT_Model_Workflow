@@ -2,7 +2,12 @@
 
 params.inputsearchresults = ''
 params.workflowParameters = ''
-params.standardfile = "HILIC_standards_positive.tsv"
+params.standardfile = "HILIC_standards_positive.tsv" 
+
+// These are override model parameters
+params.override = "No" // OVERRIDE will use the user set values
+params.override_slope = 1
+params.override_intercept = 0 
 
 //Params
 params.rt_tolerance = '0.3' // This is a tolerance in minutes
@@ -30,6 +35,9 @@ process calculateResults {
         "result_file.tsv" \
         --output_filtered_results_filename filtered_results.tsv \
         --output_results_scatter output_results_scatter.html \
-        --rt_tolerance $params.rt_tolerance
+        --rt_tolerance $params.rt_tolerance \
+        --override $params.override \
+        --override_slope $params.override_slope \
+        --override_intercept $params.override_intercept
     """
 }
