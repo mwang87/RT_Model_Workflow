@@ -8,6 +8,9 @@
         <download port="library_results" type="folder">
             <query name="resource" value="library_results"/>
         </download>
+        <download port="custom_standardfile" type="folder">
+            <query name="resource" value="custom_standardfile"/>
+        </download>
         <download port="flowParams" type="file">
             <query name="resource" value="params"/>
         </download>
@@ -20,6 +23,7 @@
     <bind action="nf_process" tool="nf_process">
         <inputAsRequirement port="workflowParameters" requirement="workflowParameters"/>
         <inputAsRequirement port="library_results" requirement="library_results"/>
+        <inputAsRequirement port="custom_standardfile" requirement="custom_standardfile"/>
         <productionToOutput port="workflow_results" production="workflow_results"/>
     </bind>
 

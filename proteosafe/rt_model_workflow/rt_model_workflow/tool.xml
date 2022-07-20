@@ -16,6 +16,7 @@
     <tool name="nf_process">
         <require name="workflowParameters" type="file"/>
         <require name="library_results" type="folder"/>
+        <require name="custom_standardfile" type="folder"/>
         <produce name="workflow_results" type="folder"/>
 
         <execution env="binary" argConvention="adhoc">
