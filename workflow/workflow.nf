@@ -12,7 +12,7 @@ params.standardfile = "HILIC_standards_positive.tsv"            // CUSTOMFILE en
 params.standardfile_custom = "folder_name"   // This is if we want to use a custom file, mostly a proteosafe customization
 
 if (params.standardfile == "CUSTOMFILE") {
-    _standardfile_ch = Channel.fromPath( params.standardfile_custom + "/*" )
+    _standardfile_ch = Channel.fromPath( params.standardfile_custom + "/*.tsv" )
 }
 else{
     _standardfile_ch = Channel.fromPath( TOOL_FOLDER + "/" + params.standardfile )
@@ -37,7 +37,7 @@ process calculateResults {
 
     input:
     file input_result from _inputresults_ch.first()
-    file standardfile from _standardfile_ch
+    file standardfile from _standardfile_ch.first()
 
     output:
     file "result_file.tsv"
