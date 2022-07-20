@@ -13,6 +13,8 @@ def main():
     parser.add_argument('--output_filtered_results_filename', help='Output filtered results filename', default=None)
     parser.add_argument('--output_results_scatter', help='output_results_scatter', default=None)
     parser.add_argument('--rt_tolerance', help='RT tolerance on the filtered output', default=0.1, type=float)
+    parser.add_argument('--rt_min', help='RT minimum', default=0.0, type=float)
+    parser.add_argument('--rt_max', help='RT maximum', default=50.0, type=float)
     parser.add_argument('--override', help='override', default="No")
     parser.add_argument('--override_slope', help='override_slope', default=1.0, type=float)
     parser.add_argument('--override_intercept', help='override_intercept', default=0.0, type=float)
@@ -28,6 +30,10 @@ def main():
     original_results_df = original_results_df.sort_values(by=['MQScore'], ascending=False)
     original_results_df["RT_Query"] = original_results_df["RT_Query"] / 60.0
 
+    # Filtering out RT min and max
+    original_results_df = original_results_df[(original_results_df["RT_Query"] >= args.rt_min) & (original_results_df["RT_Query"] <= args.rt_max)]
+
+    # Cleaning up the data frame
     results_df = original_results_df.groupby("#Scan#").first()
 
     results_df = results_df[["Compound_Name", "RT_Query", "InChIKey", "InChIKey-Planar"]]

@@ -2,9 +2,12 @@
 <flow name="fast_tst_workflow">
     <object name="workflowParameters"/>
     <collection name="library_results"/>
+    <collection name="custom_standardfile"/>
+    
 
     <action name="begin">
         <output port="library_results" collection="library_results"/>
+        <output port="custom_standardfile" collection="custom_standardfile"/>
         <output port="flowParams" object="workflowParameters"/>
     </action>
 
@@ -12,6 +15,7 @@
     <action name="nf_process">
         <input  port="workflowParameters"            object="workflowParameters"/>
         <input  port="library_results"            object="library_results"/>
+        <input  port="custom_standardfile"            object="custom_standardfile"/>
         <output port="workflow_results"              collection="workflow_results"/>
     </action>
 

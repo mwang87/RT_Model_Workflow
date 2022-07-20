@@ -32,11 +32,14 @@
             <!-- Mapping Input Files into NextFlow -->
             <arg option="-newparameters" value="publishdir:workflow_results"/>
             <arg option="-newparameters" value="inputsearchresults:library_results"/>
+            <arg option="-newparameters" value="standardfile_custom:custom_standardfile"/>
             <arg option="-newparameters" value="workflowParameters:workflowParameters/*"/>
 
             <!-- Mapping Proteosafe param to nextflow params -->
             <arg option="-parametermapping" value="standardfile:standardfile"/>
             <arg option="-parametermapping" value="rt_tolerance:rt_tolerance"/>
+            <arg option="-parametermapping" value="RT_MIN:rt_min"/>
+            <arg option="-parametermapping" value="RT_MAX:rt_max"/>
             <arg option="-parametermapping" value="OVERRIDE:override"/>
             <arg option="-parametermapping" value="OVERRIDE_SLOPE:override_slope"/>
             <arg option="-parametermapping" value="OVERRIDE_INTERCEPT:override_intercept"/>

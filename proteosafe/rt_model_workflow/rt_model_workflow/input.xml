@@ -25,8 +25,13 @@
                 <option value="HILIC_standards_positive.tsv" label="HILIC_standards_positive"/>
                 <option value="C18_standards_negative.tsv" label="C18_standards_negative"/>
                 <option value="C18_standards_positive.tsv" label="C18_standards_positive"/>
+                <option value="CUSTOMFILE" label="CUSTOMFILE"/>
             </options>
             <validator type="set"/>
+        </parameter>
+
+        <parameter name="custom_standardfile" label="Custom Standard File">
+            <fileGenerator type="upload" purpose="spectrum" target="custom_standardfile"/>
         </parameter>
 
         <parameter name="rt_tolerance" label="rt_tolerance">
@@ -38,6 +43,14 @@
                 <option value="1.0" label="1.0 Minutes"/>
             </options>
             <validator type="set"/>
+        </parameter>
+
+        <parameter name="RT_MIN" label="RT_MIN">
+            <default value="0"/>
+        </parameter>
+
+        <parameter name="RT_MAX" label="RT_MAX">
+            <default value="50"/>
         </parameter>
 
         <parameter name="OVERRIDE" label="OVERRIDE">
@@ -65,7 +78,6 @@
             <cell>
                 <label>
                     <content parameter="library_results"/>
-                    <tooltip id="hSpectrumFile"/>
                 </label>
             </cell>
             <cell>
@@ -78,6 +90,21 @@
         <row>
             <cell>
                 <label>
+                    <content parameter="custom_standardfile"/>
+                </label>
+            </cell>
+            <cell>
+                <module id="custom_standardfile" type="fileSelector">
+                    <property name="label">custom_standardfile Files</property>
+                </module>
+            </cell>
+        </row>
+
+        
+
+        <row>
+            <cell>
+                <label>
                     <content parameter="rt_tolerance"/>
                 </label>
             </cell>
@@ -85,6 +112,31 @@
                 <input type="select" parameter="rt_tolerance"></input>
             </cell>
         </row>
+
+        <row>
+            <cell>
+                <label>
+                    <content parameter="RT_MIN"/>
+                </label>
+            </cell>
+            <cell>
+                <input type="text" parameter="RT_MIN">
+                    <attribute name="size" value="10"/>
+                </input>
+            </cell>
+            <cell>
+                <label>
+                    <content parameter="RT_MAX"/>
+                </label>
+            </cell>
+            <cell>
+                <input type="text" parameter="RT_MAX">
+                    <attribute name="size" value="10"/>
+                </input>
+            </cell>
+        </row>
+
+        
 
         <row>
             <cell>
