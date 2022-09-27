@@ -16,7 +16,7 @@
         <row>
             <column label="View Chromatogram" type="genericurlgenerator" width="5">
                 <parameter name="URLBASE" value="https://gnps-lcms.ucsd.edu"/>
-                <parameter name="REQUESTPARAMETER=usi" value="mzspec:GNPS:TASK-{task}-[_dyn_#filename]"/>
+                <parameter name="REQUESTPARAMETER=usi" value="mzspec:GNPS:TASK-{task}-[filename]"/>
                 <parameter name="LABEL" value="View LCMS Chromatogram (Beta)"/>
             </column>
         </row>
@@ -30,7 +30,8 @@
         <data>
             <source type="file" name="workflow_results/filtered_results.tsv"/>
             <parsers>
-                <parser type="genericTabular"/>
+                <!-- <parser type="genericTabular"/> -->
+                <parser type="sortedTabular" sortBy="Compound_Name" operator="descending"/>
             </parsers>
         </data>
         <row>
@@ -39,6 +40,10 @@
                 <parameter name="REQUESTPARAMETER=usi" value="mzspec:GNPS:TASK-{task}-[_dyn_#filename]"/>
                 <parameter name="LABEL" value="View LCMS Chromatogram (Beta)"/>
             </column>
+            <column type="text" field="Compound_Name" label="Compound_Name" width="12"/>
+            <column type="float" field="rt_peak" label="rt_peak" precision="2"/>
+            <column type="float" field="modeled_rt_peak" label="modeled_rt_peak" precision="2"/>
+            <column type="float" field="delta_rt_to_model" label="delta_rt_to_model" precision="2"/>
         </row>
     </block>
 
