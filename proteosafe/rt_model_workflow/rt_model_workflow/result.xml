@@ -41,6 +41,9 @@
                 <parameter name="LABEL" value="View LCMS Chromatogram (Beta)"/>
             </column>
             <column type="text" field="Compound_Name" label="Compound_Name" width="12"/>
+            <column type="float" field="rt_peak" label="rt_peak" precision="2"/>
+            <column type="float" field="modeled_rt_peak" label="modeled_rt_peak" precision="2"/>
+            <column type="float" field="delta_rt_to_model" label="delta_rt_to_model" precision="2"/>
         </row>
     </block>
 
