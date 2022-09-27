@@ -31,7 +31,7 @@
             <source type="file" name="workflow_results/filtered_results.tsv"/>
             <parsers>
                 <!-- <parser type="genericTabular"/> -->
-                <parser type="sortedTabular" sortBy="filename" operator="descending"/>
+                <parser type="sortedTabular" sortBy="Compound_Name" operator="descending"/>
             </parsers>
         </data>
         <row>
